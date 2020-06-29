@@ -7,17 +7,19 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMain"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="1dp" />
+
     <ProgressBar
-        android:id="@+id/progressMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:indeterminate="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        />
+    android:id="@+id/progressMain1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    />
 </RelativeLayout>
