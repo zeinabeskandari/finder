@@ -3,52 +3,42 @@ package com.example.finder;
 import android.widget.ImageView;
 
 public class movie_class {
-    String image,movieName,directorName,productDate,summary;
-    public movie_class(String movieName,String directorName,String productDate,String summary,String image){
-        this.movieName=movieName;
-        this.directorName=directorName;
-        this.productDate=productDate;
-        this.summary=summary;
-        this.image=image;
+    String poster_path,title,overview;
+    public movie_class(String poster_path,String title,String backdrop_path,String overview,String release_date){
+        this.poster_path=poster_path;
+        this.title=title;
+        this.overview=overview;
+
     }
 
-    public String getImage() {
-        return image;
+
+
+    public String getPoster_path() {
+        return poster_path;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public String getTitle() {
+        return title;
     }
 
-    public String getDirectorName() {
-        return directorName;
+
+    public String getOverview() {
+        return overview;
     }
 
-    public String getProductDate() {
-        return productDate;
+
+    public void setPoster_path(String poster_path) {
+        this.poster_path = poster_path;
     }
 
-    public String getSummary() {
-        return summary;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+
+    public void setOverview(String overview) {
+        this.overview = overview;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
-    }
 
-    public void setDirectorName(String directorName) {
-        this.directorName = directorName;
-    }
-
-    public void setProductDate(String productDate) {
-        this.productDate = productDate;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
 }
